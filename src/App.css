@@ -13,8 +13,8 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding-top: .45em;
-  padding-bottom: .45em;
+  padding-top: 10%;
+  padding-bottom: 10%;
   z-index: 555;
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
@@ -22,7 +22,7 @@
 
 h1, p {
   color: #ffffff;
-  font-family: Monaco;
+  font-family: Comfortaa;
 }
 
 .content {

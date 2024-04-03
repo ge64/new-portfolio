@@ -18,10 +18,12 @@ import MailIcon from '@mui/icons-material/Mail';
 import { useInView } from 'react-intersection-observer';
 import {Avatar, Fade} from '@mui/material';
 import ScrollFade from './components/ScrollFade';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Intro from './components/Intro';
 import Tools from './components/Tools';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
+
 
 import './App.css';
 
@@ -67,8 +69,20 @@ function App() {
         </Box>
     );
 
+    const theme = createTheme({
+        typography: {
+            fontFamily: [
+                'Comfortaa',
+                '"Helvetica Neue"',
+                'Arial',
+                'sans-serif'
+            ].join(','),
+        },
+    });
+
     return (
         <div className="App">
+	    <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="fixed" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
                     <Toolbar variant="dense">
@@ -84,7 +98,7 @@ function App() {
                             alt="ApolloIcon"
                         />
                         <Typography variant="h6" color="inherit" component="div">
-                            Gabriel Eaton
+                            G. Eaton
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -95,7 +109,7 @@ function App() {
                 <ScrollFade><Projects /></ScrollFade>
                 <ScrollFade><AboutMe /></ScrollFade>
             </div>
-
+        </ThemeProvider>
         </div>
     );
 }
