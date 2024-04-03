@@ -84,12 +84,12 @@ function App() {
         <div className="App">
 	    <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="fixed" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
+                <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
                     <Toolbar variant="dense">
                         <IconButton onClick={toggleDrawer(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                             <MenuIcon />
                         </IconButton>
-                        <Drawer open={open} onClose={toggleDrawer(false)}>
+                        <Drawer className="App" open={open} onClose={toggleDrawer(false)}>
                             {DrawerList}
                         </Drawer>
                         <Avatar
@@ -97,7 +97,7 @@ function App() {
                             sx={{ width: 56, height: 56, mr: 1 }}
                             alt="ApolloIcon"
                         />
-                        <Typography variant="h6" color="inherit" component="div">
+                        <Typography variant="h5" color="inherit" component="div">
                             G. Eaton
                         </Typography>
                     </Toolbar>

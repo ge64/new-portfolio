@@ -1,9 +1,9 @@
 .App {
   text-align: center;
   background-color: #232323;
-  scrollbar-color: dark;
 }
 
+header,
 .AppBar {
   color: #000000;
   background: transparent;
@@ -13,11 +13,9 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding: 5px 300px;
   z-index: 555;
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px) !important;
 }
 
 h1, p {
