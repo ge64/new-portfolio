@@ -1,34 +1,41 @@
 .App {
-  text-align: center;
-  background-color: #232323;
+    text-align: center;
+    background-color: #232323;
 }
 
 header,
 .AppBar {
-  color: #000000;
-  background: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 5px 300px;
-  z-index: 555;
-  backdrop-filter: blur(1px) !important;
+    color: #000000;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 300px;
+    z-index: 555;
+    backdrop-filter: blur(1px) !important;
 }
 
 h1, p {
-  color: #ffffff;
-  font-family: Comfortaa;
+    color: #ffffff;
+    font-family: Comfortaa;
 }
 
 .content {
-  height: 500px;
+    height: 500px;
 }
 
 body {
-  background-color: #232323;
-  margin: 0;
-  padding: 0;
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 450px) {
+	header,
+	.AppBar {
+		padding: 5px 10px;
+	}
 }
