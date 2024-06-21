@@ -85,7 +85,7 @@ function App() {
 	    <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1, height: '100vg' }}>
                 <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
-                    <Toolbar variant="dense">
+                    <Toolbar className="topnav" variant="dense">
                         <IconButton onClick={toggleDrawer(true)} edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                             <MenuIcon />
                         </IconButton>
